@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Football Pick Ems</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">FOOTBALL PICK 'EM</div>
+        <h1 id="seasonTitle">Football Pick Ems</h1>
+        <p class="subtitle">Weekly Rankings</p>
+      </div>
+
+      <div class="selectors">
+        <label>
+          <span>Season</span>
+          <select id="seasonSelect"></select>
+        </label>
+        <label>
+          <span>Week</span>
+          <select id="weekSelect"></select>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div id="statusBanner" class="status-banner" hidden></div>
+
+    <section class="summary-grid">
+      <article class="summary-card">
+        <span>Selected Week</span>
+        <strong id="summaryWeek">—</strong>
+      </article>
+      <article class="summary-card">
+        <span>Players</span>
+        <strong id="summaryPlayers">—</strong>
+      </article>
+      <article class="summary-card">
+        <span>Current Leader</span>
+        <strong id="summaryLeader">—</strong>
+      </article>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div>
+          <p class="section-eyebrow">SEASON</p>
+          <h2>Overall Standings</h2>
+        </div>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Points</th>
+              <th>Games</th>
+            </tr>
+          </thead>
+          <tbody id="overallBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div>
+          <p class="section-eyebrow">WEEKLY</p>
+          <h2 id="weeklyTitle">Week Standings</h2>
+        </div>
+        <span id="activeWeekBadge" class="badge"></span>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="weeklyBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div>
+          <p class="section-eyebrow">PICKS</p>
+          <h2 id="picksTitle">Week Picks</h2>
+        </div>
+      </div>
+      <div id="picksWrap" class="table-scroll"></div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
